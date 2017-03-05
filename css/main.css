@@ -25,7 +25,9 @@
 }
 
 body {
-    font-family: 'Droid Sans', sans-serif;
+    /*font-family: 'Droid Sans', sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
 }
 
 header {
@@ -68,6 +70,11 @@ img {
 
 a {
   text-decoration: none;
+}
+
+p {
+  line-height: 30px;
+  font-weight: normal;
 }
 
 .portfolio-box-caption {
@@ -149,6 +156,10 @@ footer {
 
 .copyright {
   margin-bottom: 30px;
+}
+
+.time-line {
+  float: right;
 }
 
 
