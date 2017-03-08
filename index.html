@@ -49,7 +49,6 @@
         </div>
         <div class="col-sm-9 col-md-9">
           <h2>About Me</h2>
-          <!-- <p>(This is a sample self introduction and I'm still working on this web page) My name is Zui Shen and I am a graduate student of computer science at University of Southern California. I am currently looking for software engineering or web front-end developing jobs and will graduate in December 2016. Before beginning my studies at xxx, I interned as a software engineer in China Telecom, China. During that period, I implemented several technologies such as xxx. Through classes and my own projects, I have also gained experience in: Java, data structure and algorithms, Python, JavaScript, and Database techniques. Projects I have completed outside of my coursework include xxx.</p> -->
           <p>Hello, my name is Zui Shen. I am a new grad from the University of Southern California in computer science with knowledge and experience in web development, responsive design and searching engine. I’m a fast learner with great passion on front end web development and have excellent attention for detail. Currently, I’m actively seeking entry level full-time front-end web developer position, so let’s get in touch.</p>
           <p><span style="font-weight: bold">Skills</span>: HTML5, CSS3, JavaScript, Java, PHP, C/C++, Shell scripting, Python, SQL, jQuery, Bootstrap,KnockoutJS, Grunt, Git/GitHub.</p>
         </div>
@@ -63,10 +62,36 @@
           <h2 class="text-primary">Current and Previous Projects</h2>
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-3 col-md-6 text-center">
+            	<div class="col-lg-4 col-md-6 text-center">
+                <div class="item">
+                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Kernel works on Weenix" data-content="Weenix OS kernel programming" data-link="http://github.com/zuishen/CSCI402.git">
+                    <img src="./images/game.png" style="width:100%;">
+                    <div class="portfolio-box-caption">
+                      <div class="portfolio-box-caption-content">
+                        <h3>Game</h3>
+                        <p>Weenix OS kernel programming</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
                   <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Weather Forecast" data-content="a weather forecast webapp with responsive design" data-link="http://jasonshen.xyz/forecast/">
-                    <img src="./images/forecast.png" style="width:100%;">
+                    <img src="./images/map.png" style="width:100%;">
+                    <div class="portfolio-box-caption">
+                      <div class="portfolio-box-caption-content">
+                        <h3>Neighborhood Map</h3>
+                        <p>a weather forecast webapp with responsive design</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 text-center">
+                <div class="item">
+                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Weather Forecast" data-content="a weather forecast webapp with responsive design" data-link="http://jasonshen.xyz/forecast/">
+                    <img src="./images/main.png" style="width:100%;">
                     <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
                         <h3>Weather Forecast</h3>
@@ -76,7 +101,20 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 text-center">
+              <div class="col-lg-4 col-md-6 text-center">
+                <div class="item">
+                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Kernel works on Weenix" data-content="Weenix OS kernel programming" data-link="http://github.com/zuishen/CSCI402.git">
+                    <img src="./images/search.png" style="width:100%;">
+                    <div class="portfolio-box-caption">
+                      <div class="portfolio-box-caption-content">
+                        <h3>Web Search Engine on News Information Retrieval</h3>
+                        <p>Weenix OS kernel programming</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
                   <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="trojaNow" data-content="the backend of an social app" data-link="http://github.com/zuishen/trojaNow.git">
                     <img src="./images/trojaNow.png" style="width:100%;">
@@ -89,7 +127,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 text-center">
+              <div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
                   <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Egocentric video processing" data-content="video highlights, query and stablization for wearable camera such as go pro" data-link="http://github.com/zuishen/EgocentricVideos">
                     <img src="./images/egocentric.png" style="width:100%;">
@@ -102,7 +140,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 text-center">
+              <div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
                   <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Kernel works on Weenix" data-content="Weenix OS kernel programming" data-link="http://github.com/zuishen/CSCI402.git">
                     <img src="./images/weenix.png" style="width:100%;">
@@ -271,16 +309,28 @@
       //modal.find('.modal-body input').val(recipient)
     });
 
-    $('.portfolio-box-caption').on('mouseenter', function(event) {
-      console.log("cc");
-      $(event.target).css("opacity", 0.7);
-      console.log("bb");
-    });
+    // $('.portfolio-box-caption').on('mouseenter', function(event) {
+    //   console.log("cc");
+    //   $(event.target).css("opacity", 0.7);
+    //   console.log("bb");
+    // });
 
-    $('.portfolio-box-caption').on('mouseleave', function(event) {
-      $(event.target).css("opacity", 0);
-      console.log("aa");
-    });
+    // $('.portfolio-box-caption').hover(function(event) {
+    //   console.log("cc");
+    //   $(event.target).css("opacity", 0.7);
+    //   console.log("bb");
+    // });
+
+    // $('.portfolio-box-caption').on('mouseleave', function(event) {
+    //   $(event.target).css("opacity", 0);
+    //   console.log("aa");
+    // });
+
+    $('.portfolio-box-caption').hover(function(event) {
+	  $(event.target).stop(true, true).css("opacity", 0.7);
+	}, function() {
+	  $(event.target).stop(true, true).css("opacity", 0);
+	});
 
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
