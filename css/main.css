@@ -109,8 +109,12 @@ p {
   max-width: 50px;
 }
 
-#portfolio {
+.about-me {
+  padding: 80px 0;
+}
 
+.about-title {
+  margin-top: 10px;
 }
 
 #leetcode {
