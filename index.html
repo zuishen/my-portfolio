@@ -64,7 +64,7 @@
             <div class="row">
             	<div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
-                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Arcade Game Clone" data-content="This project aims to design and develop an arcade game that the player need to avoid enemy and get to the goal." data-link="http://github.com/zuishen/CSCI402.git">
+                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Arcade Game Clone" data-content="This project aims to design and develop an arcade game that the player need to avoid enemy and get to the goal." data-link="https://github.com/zuishen/game.git">
                     <img src="./images/game.png" style="width:100%;">
                     <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
@@ -77,7 +77,7 @@
               </div>
               <div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
-                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Neighborhood Map" data-content="This is a map based single page web app which allows users to find the neighbor places near universities." data-link="http://jasonshen.xyz/forecast/">
+                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Neighborhood Map" data-content="This is a map based single page web app which allows users to find the neighbor places near universities." data-link="https://github.com/zuishen/neighborhood-map.git">
                     <img src="./images/map.png" style="width:100%;">
                     <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
@@ -103,7 +103,7 @@
               </div>
               <div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
-                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Web Search Engine on News Information Retrieval" data-content="This project aims to built a search engine based on Apache Solr for related news searching and apply page rank." data-link="http://github.com/zuishen/CSCI402.git">
+                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Web Search Engine on News Information Retrieval" data-content="This project aims to built a search engine based on Apache Solr for related news searching and apply page rank." data-link="https://github.com/zuishen/web-search-engine.git">
                     <img src="./images/search.png" style="width:100%;">
                     <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
@@ -309,11 +309,11 @@
       //modal.find('.modal-body input').val(recipient)
     });
 
-    // $('.portfolio-box-caption').on('mouseenter', function(event) {
-    //   console.log("cc");
-    //   $(event.target).css("opacity", 0.7);
-    //   console.log("bb");
-    // });
+    $('.portfolio-box-caption').on('mouseenter', function(event) {
+      //console.log($(this).css("opacity", 0.7));
+      $(this).css("opacity", 0.7)
+
+    });
 
     // $('.portfolio-box-caption').hover(function(event) {
     //   console.log("cc");
@@ -321,17 +321,11 @@
     //   console.log("bb");
     // });
 
-    // $('.portfolio-box-caption').on('mouseleave', function(event) {
-    //   $(event.target).css("opacity", 0);
-    //   console.log("aa");
-    // });
+    $('.portfolio-box-caption').on('mouseleave', function(event) {
+    	//console.log($(this).css("opacity", 0));
+    	$(this).css("opacity", 0);
+    });
 
-
-	$('.portfolio-box-caption').mouseover(function (event) {
-    	$(event.target).css("opacity", 0.7);
-	}).mouseout(function (event) {
-    	$(event.target).css("opacity", 0);
-	});
 
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
