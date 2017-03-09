@@ -9,8 +9,6 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
   <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="./css/main.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="./bootstrap/js/Bootstrap.min.js" ></script>
   <!--      -->
 </head>
 <body>
@@ -22,13 +20,13 @@
           <span class="sr-only">Toggle navigation</span>
           <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top">HOME</a>
+        <a class="navbar-brand page-scroll current" href="#page-top">HOME</a>
       </div>
       <div class="navbar-collapse collapse" id="navbar-collpase-dropdown" aria-expanded="false" style="height: 1px">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#leetcode">LEETCODE</a></li>
+          <li><a href="#skills">SKILLS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </url>
       </div>
@@ -49,8 +47,8 @@
         </div>
         <div class="col-sm-9 col-md-9">
           <h2 class="about-title">About Me</h2>
-          <p>Hello, my name is Zui Shen. I am a new grad from the University of Southern California in computer science with knowledge and experience in web development, responsive design and searching engine. I’m a fast learner with great passion on front end web development and have excellent attention for detail. Currently, I’m actively seeking entry level full-time front-end web developer position, so let’s get in touch.</p>
-          <p><span style="font-weight: bold">Skills</span>: HTML5, CSS3, JavaScript, Java, PHP, C/C++, Shell scripting, Python, SQL, jQuery, Bootstrap,KnockoutJS, Grunt, Git/GitHub.</p>
+          <p>Hello, my name is Zui Shen. I am a new grad from the University of Southern California in computer science with knowledge and experience in web development, responsive design and searching engine. I’m a fast learner with great passion on front end web development and have excellent attention for detail. Currently, I’m actively seeking entry level full-time front-end web developer position, <a href="#contact" style="color: white;text-decoration: underline;">so let’s get in touch.</a></p>
+          <p><a href="#skills" style="font-weight: bold; color: white; text-decoration: underline;">Skills</a>: HTML5, CSS3, JavaScript, Java, PHP, C/C++, Shell scripting, Python, SQL, jQuery, Bootstrap,KnockoutJS, Grunt, Git/GitHub.</p>
         </div>
       </div>
     </div>
@@ -64,12 +62,12 @@
             <div class="row">
             	<div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
-                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Arcade Game Clone" data-content="This project aims to design and develop an arcade game that the player need to avoid enemy and get to the goal." data-link="https://github.com/zuishen/game.git">
+                  <a class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Arcade Game Clone" data-content="This project aims to design and develop an arcade game that the player need to avoid enemy and get to the goal." data-link="https://github.com/zuishen/game.git">
                     <img src="./images/game.png" style="width:100%;">
                     <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
                         <h3>Arcade Game Clone</h3>
-                        <p>This is the project that I'm currently working on and it aims to design and develop an arcade game that the player need to avoid enemy and get to the goal.</p>
+                        <p class="description">This is the project that I'm currently working on and it aims to design and develop an arcade game that the player need to avoid enemy and get to the goal.</p>
                       </div>
                     </div>
                   </a>
@@ -77,12 +75,12 @@
               </div>
               <div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
-                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Neighborhood Map" data-content="This is a map based single page web app which allows users to find the neighbor places near universities." data-link="https://github.com/zuishen/neighborhood-map.git">
+                  <a class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Neighborhood Map" data-content="This is a map based single page web app which allows users to find the neighbor places near universities." data-link="https://github.com/zuishen/neighborhood-map.git">
                     <img src="./images/map.png" style="width:100%;">
                     <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
                         <h3>Neighborhood Map</h3>
-                        <p>This is a map based single page web app which allows users to find the neighbor places near universities.</p>
+                        <p class="description">This is a map based single page web app which allows users to find the neighbor places near universities.</p>
                       </div>
                     </div>
                   </a>
@@ -90,12 +88,12 @@
               </div>
               <div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
-                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Weather Forecast" data-content="The Weather Forecast project aims to develop a web application to help users get the detail weather forecast information about the address they input." data-link="http://jasonshen.xyz/forecast/">
+                  <a class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Weather Forecast" data-content="The Weather Forecast project aims to develop a web application to help users get the detail weather forecast information about the address they input." data-link="http://jasonshen.xyz/forecast/">
                     <img src="./images/main.png" style="width:100%;">
                     <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
                         <h3>Weather Forecast</h3>
-                        <p>The Weather Forecast project aims to develop a web application to help users get the detail weather forecast information about the address they input.</p>
+                        <p class="description">The Weather Forecast project aims to develop a web application to help users get the detail weather forecast information about the address they input.</p>
                       </div>
                     </div>
                   </a>
@@ -103,12 +101,12 @@
               </div>
               <div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
-                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Web Search Engine on News Information Retrieval" data-content="This project aims to built a search engine based on Apache Solr for related news searching and apply page rank." data-link="https://github.com/zuishen/web-search-engine.git">
+                  <a class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Web Search Engine on News Information Retrieval" data-content="This project aims to built a search engine based on Apache Solr for related news searching and apply page rank." data-link="https://github.com/zuishen/web-search-engine.git">
                     <img src="./images/search.png" style="width:100%;">
                     <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
                         <h3>Web Search Engine on News Information Retrieval</h3>
-                        <p>This project aims to built a search engine based on Apache Solr for related news searching and apply page rank.</p>
+                        <p class="description">This project aims to built a search engine based on Apache Solr for related news searching and apply page rank.</p>
                       </div>
                     </div>
                   </a>
@@ -116,12 +114,12 @@
               </div>
               <div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
-                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="trojaNow" data-content="TrojaNow is an social mobile app based on Android. The backend server is implemented with PHP. It provides REST API such as sign in, micro-blog posting and giving comments." data-link="http://github.com/zuishen/trojaNow.git">
+                  <a class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="trojaNow" data-content="TrojaNow is an social mobile app based on Android. The backend server is implemented with PHP. It provides REST API such as sign in, micro-blog posting and giving comments." data-link="http://github.com/zuishen/trojaNow.git">
                     <img src="./images/trojaNow.png" style="width:100%;">
                     <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
                         <h3>trojaNow</h3>
-                        <p>TrojaNow is an social mobile app based on Android. The backend server is implemented with PHP. It provides REST API such as sign in, micro-blog posting and giving comments.</p>
+                        <p class="description">TrojaNow is an social mobile app based on Android. The backend server is implemented with PHP. It provides REST API such as sign in, micro-blog posting and giving comments.</p>
                       </div>
                     </div>
                   </a>
@@ -129,12 +127,12 @@
               </div>
               <div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
-                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Egocentric video processing" data-content="The Egocentric Video processing is a Java based program which can generate stabilized video summary and provide the relevant video segment  searching by specific image." data-link="http://github.com/zuishen/EgocentricVideos">
+                  <a class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Egocentric video processing" data-content="The Egocentric Video processing is a Java based program which can generate stabilized video summary and provide the relevant video segment  searching by specific image." data-link="http://github.com/zuishen/EgocentricVideos">
                     <img src="./images/egocentric.png" style="width:100%;">
                     <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
                         <h3>Egocentric video processing</h3>
-                        <p>The Egocentric Video processing is a Java based program which can generate stabilized video summary and provide the relevant video segment  searching by specific image.</p>
+                        <p class="description">The Egocentric Video processing is a Java based program which can generate stabilized video summary and provide the relevant video segment  searching by specific image.</p>
                       </div>
                     </div>
                   </a>
@@ -142,12 +140,12 @@
               </div>
               <div class="col-lg-4 col-md-6 text-center">
                 <div class="item">
-                  <a href="#" class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Kernel works on Weenix" data-content="This project is aim to finish some kernel works on Weenix, which is a Unix-like OS. In this project, we implemented processes and threads function for concurrency, Virtual File System interface and the virtual memory to allow the kernel to manage user address space." data-link="http://github.com/zuishen/CSCI402.git">
+                  <a class="thumbnail item" data-toggle="modal" data-target="#myModal" data-title="Kernel works on Weenix" data-content="This project is aim to finish some kernel works on Weenix, which is a Unix-like OS. In this project, we implemented processes and threads function for concurrency, Virtual File System interface and the virtual memory to allow the kernel to manage user address space." data-link="http://github.com/zuishen/CSCI402.git">
                     <img src="./images/weenix.png" style="width:100%;">
                     <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
                         <h3>Kernel works on Weenix</h3>
-                        <p>This project is aim to finish some kernel works on Weenix, which is a Unix-like OS. In this project, we implemented processes and threads function for concurrency, Virtual File System interface and the virtual memory to allow the kernel to manage user address space.</p>
+                        <p class="description">This project is aim to finish some kernel works on Weenix, which is a Unix-like OS. In this project, we implemented processes and threads function for concurrency, Virtual File System interface and the virtual memory to allow the kernel to manage user address space.</p>
                       </div>
                     </div>
                   </a>
@@ -183,7 +181,7 @@
     </div>
   </section>
 
-  <section id="leetcode">
+  <section id="skills">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-sm-12">
@@ -294,6 +292,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="./bootstrap/js/Bootstrap.min.js" ></script>
   <script>
     $('#myModal').on('show.bs.modal', function (event) {
       var a = $(event.relatedTarget); // Button that triggered the modal
@@ -340,6 +340,22 @@
         }
       }
     });
+
+    $(window).on("scroll", function() {
+      var currentPos = $(window).scrollTop();
+      $('.navbar-nav li a').add('.navbar-header a').each(function() {
+        var sectionLink = $(this);
+        var navHeight = $('#nav-wrapper').outerHeight() + 1;
+        var section = $(sectionLink.attr('href'));
+
+        if (section.position().top - navHeight - 400 <= currentPos && sectionLink.offset().top + section.height() > currentPos) {
+          $('.navbar-nav li a').add('.navbar-header a').removeClass('current');
+          sectionLink.addClass('current');
+        } else {
+          sectionLink.removeClass('current');
+        }
+      });
+    })
 });
   </script>
 </body>
